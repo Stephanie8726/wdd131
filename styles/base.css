@@ -14,7 +14,7 @@ body {
 
 /* ----header---- */
 header {
-    background-color: #4f84aa;
+    background-color: #165786;
     color: white;
     display: flex;
     align-items: center;
@@ -27,8 +27,8 @@ h1 {
     font-size: 24px;
 }
 
-.name {
-    color: #cd9990;
+h2 {
+    color: #FFFFFF;
 }
 
 h3{
@@ -36,9 +36,14 @@ h3{
     font-size: 20px;
 }
 
+.name {
+    color: #cd9990;
+}
+
+
 /* ----nav---- */
 nav {
-    background-color: #9abfdb;
+    background-color: #73a9d3;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
@@ -96,7 +101,7 @@ nav a:hover {
 }
 
 #me, #web { 
-    background-color: #7A9AB2; 
+    background-color: #165786; 
     padding: 10px; 
     text-align: center; 
     border-radius: 8px; 
@@ -131,7 +136,7 @@ img:hover {
 
 /* ----footer---- */
 footer {
-    background-color: #4f84aa;
+    background-color: #165786;
     padding: 8px;
     text-align: center;
     color: white;
