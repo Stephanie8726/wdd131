@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Sansita:wght@300;400;700&display=swap");
+
+:root {
+    --primary-pastel: #4f84aa;
+    --secondary-pastel: #D1E4E8;
+    --accent1-pastel: #F8B5B5;
+    --accent2-pastel: #E3E7A9;
+}
+
+/* -----body----- */
+body {
+    font-family: "Sansita", sans-serif;
+}
+
+/* ----header---- */
+header {
+    background-color: #4f84aa;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h3{
+    text-align: center;
+    font-size: 20px;
+}
+
+/* ----nav---- */
+nav {
+    background-color: #9abfdb;
+    margin: 0 auto;
+    max-width: 800px;
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+}
+
+nav a {
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: overline;
+    transform: scale(1.1);
+    color: blanchedalmond;
+}
+
+/* ----container and card---- */
+.container {
+    display: flex;
+    gap: 24px;
+    margin: 20px 0;
+    padding: 0 20px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px #7A9AB2;
+    margin: 10px;
+    padding: 20px;
+}
+
+.sec-class1 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.sec-class2 p{
+    margin-left: 200px;
+}
+
+.profile, .phflag {
+    width: 150px;
+    height: auto;
+}
+
+.phflag{
+    margin-top: -60px;
+    margin-left: 30px;
+}
+
+.sec-class2{
+}
+
+.content {
+    flex: 1/1;
+}
+
+#me, #web { 
+    background-color: #7A9AB2; 
+    padding: 10px; 
+    text-align: center; 
+    border-radius: 8px; 
+    margin: 10px;
+    margin-top: -20px;
+} 
+
+/* ----Web resources photo IMG---- */
+.resources {
+    max-width: 130px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* ----footer---- */
+footer {
+    background-color: #4f84aa;
+    padding: 8px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+}
+
+@media (min-width: 640px) {
+    nav a {
+        flex: 1;
+    }
+}
+
+
+
