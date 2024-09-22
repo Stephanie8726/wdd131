@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Sansita:wght@300;400;700&display=swap");
 
 :root {
-    --primary-pastel: #4f84aa;
-    --secondary-pastel: #D1E4E8;
+    --primary-pastel: #165786;
+    --secondary-pastel: #09436f;
     --accent1-pastel: #F8B5B5;
     --accent2-pastel: #E3E7A9;
 }
@@ -37,13 +37,13 @@ h3{
 }
 
 .name {
-    color: #cd9990;
+    color: #A0D6E3;
 }
 
 
 /* ----nav---- */
 nav {
-    background-color: #73a9d3;
+    background-color: #09436f;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
@@ -51,7 +51,7 @@ nav {
 }
 
 nav a {
-    color: #fff;
+    color: #F2F2F2;
     font-weight: bold;
     text-align: center;
     padding: 1rem;
@@ -61,7 +61,7 @@ nav a {
 nav a:hover {
     text-decoration: overline;
     transform: scale(1.1);
-    color: rgb(165, 105, 14);
+    color: #F2F2F2;
 }
 
 /* ----container and card---- */
@@ -121,13 +121,6 @@ nav a:hover {
 .phflag {
     float: left;
     margin-right: 20px;
-}
-
-/* ----Web resources photo IMG---- */
-.resources {
-    max-width: 130px;
-    display: block;
-    margin: 0 auto;
 }
 
 img:hover {
