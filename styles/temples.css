@@ -86,7 +86,6 @@ figure{
     margin: 0 auto;
     padding: 20px;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 figure img {
@@ -98,10 +97,9 @@ figcaption{
     text-align: center;
 }
 
-figure:hover{
-    transform: scale(1.2); 
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
+figure img:hover{
+    transform: scale(1.05); 
+    border-radius: 6px;
 }
 
 /* ----footer---- */
