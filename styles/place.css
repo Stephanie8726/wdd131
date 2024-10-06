@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+    --primary-pastel: #0a7751;
+    --secondary-pastel: #73b9de;
+    --secondary-pastel-light: #f4f6f9;
+    --accent1-pastel: #e9ecef;
+    --accent2-pastel: #beefd5;
+    --icon-size-small: 40px;
+    --icon-size-medium: 60px;
+    --icon-size-large: 80px;
+    --icon-color: #ffcc00;
+    --text-color-light: #e9ecef;
+    --text-color-dark: #000;
+}
+
+body {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* ---------Header---------- */
+header {
+    background: var(--primary-pastel);
+    text-align: center;
+    padding: 5px;
+    margin: 0 auto;
+    font-family: "Sansita", sans-serif;
+}
+
+h1{
+    font-family: cursive;
+    font-size: 40px;
+    color: white;
+}
+
+/* ---------Main Picture---------- */
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+/* ---------Section 1 (Data and Weather Reports)---------- */
+.data-report, .weather-report {
+    font-family: cursive;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    border-radius: 4px;
+    margin-top: -30px;
+}
+
+.data, .weather {
+    font-weight: bold;
+    color: white;
+}
+
+.data-report {
+    font-family: cursive;
+    max-width: 400px;
+    height: auto;
+    margin-top: -670px;
+    margin-left: 100px;
+}
+
+.weather-report {
+    font-family: cursive;
+    max-width: 200px;
+    height: auto;
+    margin-right: 200px;
+}
+
+.weather-report .wide-view::after {
+    content: '⛅';
+    display: block;
+    font-size: 30px;
+    margin-top: -65px;
+    margin-left: 180px;
+}
+
+.wide-view{
+    display: flex;
+    justify-content: center;
+}
+
+.wide-view img{
+    width: 65px;
+}
+
+/* ---------Section 2 (Text Section)---------- */
+h2 {
+    color: white;
+    font-size: 30px;
+}
+
+p {
+    font-size: 16px;
+    color: white;
+}
+
+/* ---------Views---------- */
+.mobile-view {
+    width: var(--icon-size-small);
+    height: auto;
+    display: none;
+}
+
+/* ---------Footer---------- */
+footer {
+    background: var(--primary-pastel);
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    font-family: "Sansita", sans-serif;
+    color: white;
+    font-weight: bold;
+}
+#copyright, #lastModified {
+    color: white;
+}
+
+/* ----------Media Query for Responsiveness---------- */
+@media (max-width: 900px) {
+    .data-report, 
+    .weather-report {
+    margin-top: -400px;
+    margin-right: 100px;
+    }
+
+    footer{
+        margin-top: 100px;
+    }
+    
+}
+
+
+
+@media (max-width: 730px) {
+   .weather-report .wide-view::after{
+    content: '⛅';
+    height: auto;
+    display: none;
+   }
+
+    .mobile-view {
+        display: block;
+    }
+
+    .data-report, .weather-report {
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+        color: var(--text-color-dark);
+        background: linear-gradient(#499ecc, #5dcd8c);   
+        gap: 20px;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    h2 {
+        padding: 5px;
+        margin: 0 auto;
+        font-size: 16px;
+        color: white;
+        background: var(--primary-pastel);
+    }
+
+    #copyright, #lastModified {
+        color: white;
+    }
+    
+    footer{
+        margin-top: -5px;
+    }
+
+    p{
+        font-size: 14px;
+    }
+}
+
+
