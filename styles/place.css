@@ -10,9 +10,11 @@
     --icon-size-medium: 60px;
     --icon-size-large: 80px;
     --icon-color: #ffcc00;
-    --text-color-light: #e9ecef;
-    --text-color-dark: #000;
+    --text-color-light: #f1f1f1;
+    --text-color-dark: #000000;
+    --text-color-contrast: #333333;
 }
+
 
 body {
     max-width: 100%;
@@ -50,16 +52,16 @@ h1{
     margin-top: -30px;
 }
 
-.data, .weather {
+.data, .weather, #wind-chill {
     font-weight: bold;
-    color: white;
+    color: var(--text-color-dark); 
 }
 
 .data-report {
     font-family: cursive;
     max-width: 400px;
     height: auto;
-    margin-top: -670px;
+    margin-top: -680px;
     margin-left: 100px;
 }
 
@@ -69,6 +71,7 @@ h1{
     height: auto;
     margin-right: 200px;
 }
+
 
 .weather-report .wide-view::after {
     content: '⛅';
@@ -110,11 +113,12 @@ footer {
     background: var(--primary-pastel);
     text-align: center;
     padding: 10px;
-    margin: 0 auto;
+    margin-top: 10px;
     font-family: "Sansita", sans-serif;
     color: white;
     font-weight: bold;
 }
+
 #copyright, #lastModified {
     color: white;
 }
@@ -163,8 +167,8 @@ footer {
         padding: 5px;
         margin: 0 auto;
         font-size: 16px;
-        color: white;
-        background: var(--primary-pastel);
+        color: var(--text-color-light);
+        background: linear-gradient(#499ecc, #5dcd8c);
     }
 
     #copyright, #lastModified {
@@ -177,7 +181,6 @@ footer {
 
     p{
         font-size: 14px;
+        color: var(--text-color-dark);
     }
 }
-
-
