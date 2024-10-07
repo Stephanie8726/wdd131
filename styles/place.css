@@ -48,13 +48,9 @@ h1{
     padding: 10px;
     margin: auto;
     margin-top: -30px;
-    background-color: rgba(20, 195, 108, 0.2);
-    background-color: rgba(242, 244, 247, 0.4); 
-    position: relative;
-    border-radius: 8px;
 }
 
-.data, .weather, #wind-chill {
+.data, .weather {
     font-weight: bold;
     color: var(--text-color-dark); 
 }
@@ -64,12 +60,20 @@ h1{
     height: auto;
     margin-top: -720px;
     margin-left: 100px;
+    background-color: rgba(20, 195, 108, 0.2);
+    background-color: rgba(242, 244, 247, 0.4); 
+    position: relative;
+    border-radius: 8px;
 }
 
 .weather-report {
     max-width: 200px;
     height: auto;
     margin-right: 200px;
+    background-color: rgba(20, 195, 108, 0.2);
+    background-color: rgba(242, 244, 247, 0.4); 
+    position: relative;
+    border-radius: 8px;
 }
 
 
@@ -120,6 +124,10 @@ footer {
     font-family: "Sansita", sans-serif;
     color: white;
     font-weight: bold;
+}
+
+#copyright, #lastModified{
+    color: white;
 }
 
 /* ----------Media Query for Responsiveness---------- */
