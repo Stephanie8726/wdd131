@@ -43,10 +43,15 @@ h1{
 }
 
 /* ---------Section 1 (Data and Weather Reports)---------- */
+#copyright, #lastModified {
+    color: white;
+}
+
 .data-report, .weather-report {
     padding: 10px;
     margin: auto;
     margin-top: -30px;
+    background-color: var(--accent2-pastel);
 }
 
 .data, .weather, #wind-chill {
@@ -58,10 +63,10 @@ h1{
     font-family: cursive;
     max-width: 250px;
     height: auto;
-    margin-top: -680px;
+    margin-top: -690px;
     margin-left: 100px;
-    background-color: rgba(134, 234, 177, 0.2);
-    background-color: rgba(189, 210, 235, 0.4); 
+    background-color: rgba(20, 195, 108, 0.2);
+    background-color: rgba(242, 244, 247, 0.4); 
     position: relative;
     border-radius: 8px;
 }
@@ -72,7 +77,7 @@ h1{
     height: auto;
     margin-right: 200px;
     background-color: rgba(134, 234, 177, 0.2);
-    background-color: rgba(189, 210, 235, 0.4); 
+    background-color: rgba(15, 83, 166, 0.4); 
     position: relative;
     border-radius: 8px;
 }
@@ -127,10 +132,6 @@ footer {
     font-weight: bold;
 }
 
-#copyright, #lastModified {
-    color: white;
-}
-
 /* ----------Media Query for Responsiveness---------- */
 @media (max-width: 900px) {
     .data-report, 
@@ -148,6 +149,10 @@ footer {
 
 
 @media (max-width: 730px) {
+    #copyright, #lastModified {
+        color: white;
+    }
+
    .weather-report .wide-view::after{
     content: '⛅';
     height: auto;
@@ -178,10 +183,7 @@ footer {
         font-size: 16px;
         color: var(--text-color-light);
         background: linear-gradient(#499ecc, #5dcd8c);
-    }
-
-    #copyright, #lastModified {
-        color: white;
+        text-align: center;
     }
     
     footer{
@@ -191,5 +193,6 @@ footer {
     p{
         font-size: 14px;
         color: var(--text-color-dark);
+        text-align: center;
     }
 }
