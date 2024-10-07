@@ -44,11 +44,8 @@ h1{
 
 /* ---------Section 1 (Data and Weather Reports)---------- */
 .data-report, .weather-report {
-    font-family: cursive;
     padding: 10px;
     margin: auto;
-    text-align: center;
-    border-radius: 4px;
     margin-top: -30px;
 }
 
@@ -59,10 +56,14 @@ h1{
 
 .data-report {
     font-family: cursive;
-    max-width: 400px;
+    max-width: 250px;
     height: auto;
     margin-top: -680px;
     margin-left: 100px;
+    background-color: rgba(134, 234, 177, 0.2);
+    background-color: rgba(189, 210, 235, 0.4); 
+    position: relative;
+    border-radius: 8px;
 }
 
 .weather-report {
@@ -70,6 +71,10 @@ h1{
     max-width: 200px;
     height: auto;
     margin-right: 200px;
+    background-color: rgba(134, 234, 177, 0.2);
+    background-color: rgba(189, 210, 235, 0.4); 
+    position: relative;
+    border-radius: 8px;
 }
 
 
@@ -78,7 +83,7 @@ h1{
     display: block;
     font-size: 30px;
     margin-top: -65px;
-    margin-left: 180px;
+    margin-left: 60px;
 }
 
 .wide-view{
@@ -92,8 +97,11 @@ h1{
 
 /* ---------Section 2 (Text Section)---------- */
 h2 {
+    background-color: var(--primary-pastel);
     color: white;
     font-size: 30px;
+    text-align: left;
+    margin-left: -20px;
 }
 
 p {
