@@ -70,8 +70,8 @@ h1{
     max-width: 200px;
     height: auto;
     margin-right: 200px;
-    background-color: rgba(20, 195, 108, 0.2);
-    background-color: rgba(242, 244, 247, 0.4); 
+    background-color: rgba(228, 239, 234, 0.2);
+    background-color: rgba(11, 73, 165, 0.4); 
     position: relative;
     border-radius: 8px;
 }
