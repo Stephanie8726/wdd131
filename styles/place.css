@@ -50,7 +50,7 @@ h1{
     margin-top: -30px;
 }
 
-.data, .weather {
+.data, .weather, .wind-chill{
     font-weight: bold;
     color: var(--text-color-dark); 
 }
@@ -58,7 +58,7 @@ h1{
 .data-report {
     max-width: 250px;
     height: auto;
-    margin-top: -720px;
+    margin-top: -550px;
     margin-left: 100px;
     background-color: rgba(20, 195, 108, 0.2);
     background-color: rgba(242, 244, 247, 0.4); 
@@ -69,9 +69,10 @@ h1{
 .weather-report {
     max-width: 200px;
     height: auto;
+    margin-top: -200px;
     margin-right: 200px;
-    background-color: rgba(228, 239, 234, 0.2);
-    background-color: rgba(11, 73, 165, 0.4); 
+    background-color: rgba(20, 195, 108, 0.2);
+    background-color: rgba(242, 244, 247, 0.4); 
     position: relative;
     border-radius: 8px;
 }
@@ -106,6 +107,7 @@ h2 {
 p {
     font-size: 16px;
     color: white;
+    text-align: center;
 }
 
 /* ---------Views---------- */
@@ -131,7 +133,7 @@ footer {
 }
 
 /* ----------Media Query for Responsiveness---------- */
-@media (max-width: 900px) {
+@media (max-width: 1290px){
     .data-report, 
     .weather-report {
     margin-top: -400px;
