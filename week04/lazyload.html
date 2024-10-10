@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131: Lazy Loading Demonstration</title>
+    <meta name="description"
+        content="WDD 131 - Dynamic Web Fundamentals by Stephanie D. Selanoba covers essential skills in web development, including HTML, CSS, and JavaScript for creating dynamic, responsive websites.">
+    <meta name="author" content="Stephanie Dacullo Selanoba">
+    <link rel="stylesheet" href="styles/lazyload.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
+</head> 
+
+<body>
+    <header>
+        <h1>Lazy Loading</h1>
+    </header>
+    <main>
+        <picture>
+            <img src="https://picsum.photos/400/600" alt="Random Photo" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="https://picsum.photos/id/400/400/600" alt="Leaf" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="https://picsum.photos/id/14/400/600" alt="Seashore" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="https://picsum.photos/id/29/400/600" alt="Rocky Mountain" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="https://picsum.photos/id/22/400/600" alt="Person on the Street" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="https://picsum.photos/id/28/400/600" alt="Forest" loading="lazy" width="400" height="600">
+        </picture>
+    </main>
+    <footer>
+        <p><span id="copyright"></span>🌻 Stephanie Dacullo Selanoba 🌻 Philippines 🇵🇭</p>
+        <p id="lastModified"></p>    
+    </footer>
+</body>
+</html>
+
