@@ -126,9 +126,9 @@ function filterTemples(category) {
 document.querySelectorAll('.navigation a').forEach(link => {
     link.addEventListener('click', (event) => {
         event.preventDefault();
-        const category = event.target.textContent.toLowerCase();
+        const filterCategory= event.target.textContent.toLowerCase();
 
-        if (category === "home") {
+        if (filterCategory === "home") {
             createTempleCard(temples); 
         } else {
             filterTemples(filterCategory); // apply filter
