@@ -50,6 +50,11 @@ main, .wireframe-img{
     margin: 20px;
 }
 
+.wireframe-img{
+    max-width: 900px;
+    height: 450px;
+}
+
 span{
     font-weight: 500;
 }
