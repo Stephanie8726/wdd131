@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131: Product Review Form</title>
+    <meta name="description"
+        content="WDD 131 - Dynamic Web Fundamentals by Stephanie D. Selanoba covers essential skills in web development, including HTML, CSS, and JavaScript for creating dynamic, responsive websites.">
+    <meta name="author" content="Stephanie Dacullo Selanoba">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html" class="review">
+            <label>Product Name*
+                <select id="product-name" name="productName" required>
+                    <option value="" disabled selected>Choose a Product... &#9662;</option>
+                </select>
+            </label>
+
+            <div>Overall Rating*✍️</div>
+            <div class="rating-container">
+                <label><span class="star-rating">★</span><input type="radio" id="one-star" name="rating" value="1"
+                        required></label>
+                <label><span class="star-rating">★★</span><input type="radio" id="two-star" name="rating" value="2"
+                        required></label>
+                <label><span class="star-rating">★ ★ ★ </span><input type="radio" id="three-star" name="rating"
+                        value="3" required></label>
+                <label><span class="star-rating">★ ★ ★ ★</span><input type="radio" id="four-star" name="rating"
+                        value="4" required></label>
+                <label><span class="star-rating">★ ★ ★ ★ ★</span><input type="radio" id="five-star" name="rating"
+                        value="5" required></label>
+            </div>
+
+            <label>Date of Installation*<input type="date" id="installation-date" name="installation" required></label>
+
+            <div id="select">Which features did you find useful in the product?<br><i>(Check all that apply)</i></div>
+            <label><input type="checkbox" id="durability" name="features" value="Durability">Durability</label>
+            <label><input type="checkbox" id="ease-of-use" name="features" value="Ease of Use">Ease of Use</label>
+            <label><input type="checkbox" id="performance" name="features" value="Performance">Performance</label>
+            <label><input type="checkbox" id="design" name="features" value="Design">Design</label>
+
+            <div>Written Review <span>(Optional)</span></div>
+            <textarea id="review" name="writtenReview" placeholder="Write your review here..."></textarea>
+
+            <label>Your Name <span>(Optional)</span><input type="text" name="username"
+                    placeholder="Enter your username (e.g., steph102)"></label>
+
+
+            <input type="submit" value="Share Your Experience">
+        </form>
+
+    </main>
+    <footer>
+        <p><span id="copyright"></span>🌻 Stephanie Dacullo Selanoba 🌻 Philippines 🇵🇭</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
