@@ -8,20 +8,19 @@ document.addEventListener("DOMContentLoaded", function () {
     const lastModifiedElement = document.getElementById("lastModified");
     const lastModifiedDate = document.lastModified;
     lastModifiedElement.textContent = `Last modified: ${lastModifiedDate}`;
+}
+);
 
 // Code for the hamburger menu
 const menuButton = document.querySelector('#menu-button');
-const navigation = document.querySelector('.navigation');
+const navigation = document.querySelector('.nav-header');
 
 menuButton.addEventListener('click', () => {
-    navigation.classList.toggle('open');
-    
+    navigation.classList.toggle('open'); 
+
     if (menuButton.textContent === '☰') {
-        menuButton.textContent = '❌'; // Change to close icon
+        menuButton.textContent = '❌'; 
     } else {
-        menuButton.textContent = '☰'; // Change it back to hamburger icon
+        menuButton.textContent = '☰';
     }
 });
-  
-}
-);

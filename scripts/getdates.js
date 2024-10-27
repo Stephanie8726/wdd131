@@ -10,3 +10,4 @@ document.addEventListener("DOMContentLoaded", function () {
     lastModifiedElement.textContent = `Last modified: ${lastModifiedDate}`;
 } 
 );
+
