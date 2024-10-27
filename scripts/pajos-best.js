@@ -41,7 +41,7 @@ function createHeader() {
 
 function createAboutSection() {
     const aboutHTML = `
-<img src="images/spanish-bangus.webp" alt="Pajo's Best Image" class="pajo-hero-img" loading="lazy" width="600" height="400">
+    <img src="images/spanish-bangus.webp" alt="Pajo's Best Image" class="pajo-hero-img" loading="lazy" width="600" height="400">
         <h1>Pajo's Best - Special Spanish Bangus</h1>
         <p>
             Pajo’s Best offers a delightful selection of locally produced goods, including Special Spanish Bangus,
