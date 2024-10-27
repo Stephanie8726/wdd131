@@ -41,7 +41,7 @@ function createHeader() {
 
 function createAboutSection() {
     const aboutHTML = `
-        <img src="images/spanish-bangus.webp" alt="Pajo's Best Image" class="pajo-hero-img" loading="lazy">
+<img src="images/spanish-bangus.webp" alt="Pajo's Best Image" class="pajo-hero-img" loading="lazy" width="600" height="400">
         <h1>Pajo's Best - Special Spanish Bangus</h1>
         <p>
             Pajo’s Best offers a delightful selection of locally produced goods, including Special Spanish Bangus,
@@ -87,8 +87,7 @@ function createTeamSection() {
     teamOrganizers.forEach(member => {
         const memberHTML = `
             <figure class="team-member">
-                <img src="${member.url}" alt="${member.name}" class="team-member-img" loading="lazy" onerror="this.onerror=null; this.src='images/default-image.jpg';">
-                <figcaption>
+ <img src="${member.url}" alt="${member.name}" class="team-member-img" loading="lazy" onerror="this.onerror=null; this.src='images/default-image.jpg';" width="150" height="150">                <figcaption>
                 <p><strong>${member.name}</strong> <i>(${member.role})</i></p>
                 <p>${member.description}</p>
                 </figcaption>
