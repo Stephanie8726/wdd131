@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
               localStorage.setItem("contactForm", JSON.stringify(formData));
 
               //redirect to the reserve file
-              window.location.href = "pajos-reserve.html";
+              window.location.href = "pajos-reserve-form.html";
           } else {
               let errorMessage = 'Please fill out all required fields.';
               if (selectedProducts.length === 0) {
